@@ -1,0 +1,24 @@
+{
+  "$schema": "https://unpkg.com/ts-node@10.9.1/tsconfig.schema.json",
+  "ts-node": {
+    "swc": true,
+    "experimentalResolver": true,
+    "experimentalSpecifierResolution": "node",
+    "esm": true
+  },
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "outDir": "dist",
+    "rootDir": "src",
+    "strict": true,
+    "moduleResolution": "nodenext",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "emitDeclarationOnly": true
+  },
+  "include": ["src/**/*.ts", "src/global.d.ts"],
+  "exclude": ["./node_modules"]
+}
